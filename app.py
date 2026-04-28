@@ -474,18 +474,7 @@ if page == "Home / Overview":
         </div>
         """, unsafe_allow_html=True)
 
-    # Segmentation rules reference card
-    st.markdown("<hr class='divider'>", unsafe_allow_html=True)
-    st.markdown("<div class='section-header'>Segmentation Rules</div>", unsafe_allow_html=True)
-    rules = [
-        ("Age 10 – 24",   "Any purchase frequency",          "Students / Low Spenders"),
-        ("Age 25 – 40",   "Low or Medium purchase frequency", "Budget Buyers"),
-        ("Age 25 – 40",   "High purchase frequency",          "Premium Users"),
-        ("Age 41 and above", "Low or Medium purchase frequency", "Budget Buyers"),
-        ("Age 41 and above", "High purchase frequency",          "Premium Users"),
-    ]
-    rules_df = pd.DataFrame(rules, columns=["Age Range", "Purchase Frequency", "Segment"])
-    st.dataframe(rules_df, use_container_width=True, hide_index=True)
+   
 
 
 # ================================================
